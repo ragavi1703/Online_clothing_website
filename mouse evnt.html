@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+ <title>Mouse_Event_Listener</title>
+<script type = "text/javascript">
+	window.addEventListener( "load", start, false );
+	
+	function start()
+	{
+	document.getElementById("picture").addEventListener("mouseover", over, false );
+	document.getElementById("picture").addEventListener("mouseout", out, false );
+	}
+
+	function over()
+	{
+	 document.getElementById("picture").setAttribute( "src", "yellow leh.webp");
+	}
+
+	function out()
+	{
+	document.getElementById("picture").setAttribute( "src", "logo.png");
+	}
+
+    window.addEventListener( "load", start1, false );
+	
+	function start1()
+	{
+	document.getElementById("pic").addEventListener("mouseover", over1, false );
+	document.getElementById("pic").addEventListener("mouseout", out1, false );
+	}
+
+	function over1()
+	{
+	 document.getElementById("pic").setAttribute( "src", "yellow leh.webp");
+	}
+
+	function out1()
+	{
+	document.getElementById("pic").setAttribute( "src", "logo.png");
+	}
+	
+</script> 
+</head>
+<body>
+
+	<img src = "logo.png" id = "picture" alt = "AVADA KEDAVRA">
+    <img src = "logo.png" id = "pic" alt = "AVADA KEDAVRA">
+
+</body>
+ </html>

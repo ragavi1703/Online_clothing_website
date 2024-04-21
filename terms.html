@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    body{
+        background-color: #f7f0f6;
+    }
+  </style>
+
+<script>
+    function mouseOver( e )
+    {
+        //document.write(e.target.tagName);
+        if ( e.target.tagName.toLowerCase() == "li" )
+        {
+        e.target.setAttribute( "style","color: " + e.target.getAttribute( "id" ) );
+        } 
+    }
+    
+    function mouseOut( e )
+    {
+        if ( e.target.tagName.toLowerCase() == "li" )
+        {
+        e.target.innerHTML = e.target.getAttribute( "name" );
+        }
+    }
+    
+    document.addEventListener( "mouseover", mouseOver, false );
+    document.addEventListener( "mouseout", mouseOut, false );
+    </script>
+    <title>Terms and conditions</title>
+</head>
+<body>
+    <div class="container">
+    <p>
+        <ul>
+            <center><H3>TERMS AND CONDITIONS
+            </H3></center>
+            <li id="green" name="Avada Kedavra Return & Exchange Policy Offers gives You the option to return or exchange items purchased on within thirty (30) days of the receipt. In case of return of the purchased chech queries in home page">Avada Kedavra Return & Exchange Policy Offers gives You the option to return or exchange items purchased on within thirty (30) days of the receipt. In case of return of the purchased chech queries in home page.</li><br>
+            <li id="pink" name="The expected delivery duration will be mentioned at the time of booking.">The expected delivery duration will be mentioned at the time of booking.</li><br>
+            <li id="orange" name="Avada Kedavra and/or Brand shall not be responsible if some purchase is not registered or is lost due to any network issues/problems such as breakdown of machinery, unclear/ disruption in the network or non-receipt of payment from banks/payment gateways and/or the cost(s) charged by the network operator(s). Any dispute in connection to the same shall be settled between the end customer and the network operator without involving Avada Kedavra and/or Brand.">Avada Kedavra and/or Brand shall not be responsible if some purchase is not registered or is lost due to any network issues/problems such as breakdown of machinery, unclear/ disruption in the network or non-receipt of payment from banks/payment gateways and/or the cost(s) charged by the network operator(s). Any dispute in connection to the same shall be settled between the end customer and the network operator without involving Avada Kedavra and/or Brand.</li><br>
+            <li id="black" name="Avada Kedavra and/or Brand reserves the right to amend, modify, cancel, update or withdraw this Offer at any time without notice. Upon such premature suspension, inconvenience, cessation, withdrawal, termination or closure of the Offer by Avada Kedavra no person shall be entitled to claim loss of any kind whatsoever.">Avada Kedavra and/or Brand reserves the right to amend, modify, cancel, update or withdraw this Offer at any time without notice. Upon such premature suspension, inconvenience, cessation, withdrawal, termination or closure of the Offer by Avada Kedavra no person shall be entitled to claim loss of any kind whatsoever.</li><br>
+            <li id="red" name="Customers hereby agree that Avada Kedavra and/or Brand has the sole right to decide all matters and disputes arising from this Offer and that all decisions of Avada Kedavra and/or Brand are final and binding.">Customers hereby agree that Avada Kedavra and/or Brand has the sole right to decide all matters and disputes arising from this Offer and that all decisions of Avada Kedavra and/or Brand are final and binding.</li><br>
+            <li id="brown" name="This T&C shall be governed in accordance with the applicable laws in India. Courts at Bangalore shall have the exclusive jurisdiction to settle any dispute that may arise under this T&C.">This T&C shall be governed in accordance with the applicable laws in India. Courts at Bangalore shall have the exclusive jurisdiction to settle any dispute that may arise under this T&C.</li>
+
+        </ul>
+    </p>
+    
+    <center><a href="boot form.html" class="btn btn-default" role="button">Ok</a></center>
+    </div>
+</body>
+</html>

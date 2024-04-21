@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    body{
+        background-color: #E4DCCF;
+    }
+  </style>
+  <script>
+    function validateform() {
+       
+        var email = document.myform.email.value;
+        var pwd = document.myform.pass.value;
+        
+
+        
+        if (email == null || email == "") {
+            alert("Please enter your Email!!");
+            return false;
+        }
+        if (email.length != "") {
+            var regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+            if (regex.test(email) === false) {
+                alert("Enter a valid Email!!");
+                return false;
+            }
+        }
+       if (pwd == null || pwd == "") {
+            alert("Please enter Password!!");
+            return false;
+        }
+        if (pwd.length != "") {
+            var regex = /(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/;
+            if (regex.test(pwd) === false) {
+                alert("Enter a valid password!!");
+                return false;
+            }
+        }
+        
+    }
+</script>
+</head>
+<body>
+
+<div class="container">
+  <center>
+    <h2>Sign In</h2>
+  </center><br>
+  <div class="container">
+    <div class="row">
+        <div class="col-md-offset-3 col-md-3"><img class="img-fluid" src="download.png" width="250" height="250"> </div>
+        <div class="col-md-3">
+            <form class="form-horizontal" method="post" name="myform"  onsubmit="return validateform()">
+    
+    
+                <div class="form-group">
+                  <label class="control-label col-sm-3" for="email">Email:</label>
+                  <div class="col-sm-10">
+                    <input type="email" name="email" class="form-control" id="email" placeholder="Enter email">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label col-sm-3" for="pwd">Password:</label>
+                  <div class="col-sm-10">          
+                    <input type="password" name="pass"class="form-control" id="password" placeholder="Enter password">
+                  </div>
+                </div>
+                
+                    <div class="checkbox"><br>
+                      <label>New User? <a href="signup.html">SignUp</a></label> 
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">        
+                  <div class="col-sm-offset-4 col-sm-6">
+                    <!-- <center><a href="boot form.html" class="btn btn-default" role="button" formaction="http://localhost:3000/login" >Submit</a></center> -->
+                    <center><button type="submit" name="login" class="btn" formaction="http://localhost:3000/login" ><a
+                      style="text-decoration: none;color:black;">Submit</a></button>
+                      <button type="submit" class="btn" ><a href="boot home.html"
+                        style="text-decoration: none;color:black;">Home</a></button>
+                      </center>
+			
+                  </div>
+                </div>
+              </form>
+            </div>
+            
+        </div>
+        
+      </div>
+    
+       
+        
+      </div>
+      
+  
+</body>
+</html>
